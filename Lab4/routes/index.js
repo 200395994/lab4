@@ -8,3 +8,19 @@ router.get('/', function (req, res) {
 });
 
 module.exports = router;
+
+
+/* GET Login page. */
+router.get('/login', function (req, res) {
+    res.render('login', { title: 'Express' });
+});
+
+module.exports = router;
+
+
+/* GET Registration page. */
+router.get('/registration', function (req, res) {
+    res.render('registration', { title: 'Express' });
+});
+
+module.exports = router;

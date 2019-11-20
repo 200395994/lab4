@@ -1,0 +1,20 @@
+﻿.form
+  ul.tab-group
+    li.tab.active
+
+      h1 Welcome
+      form(action='/' method='post')
+        .field-wrap
+          label
+            | Email Address
+            span.req *
+          input(type='email' required='' autocomplete='off')
+        .field-wrap
+          label
+            | Password
+            span.req *
+          input(type='password' required='' autocomplete='off')
+        p.forgot
+          a(href='#') Forgot Password?
+        button.button.button-block Log In
+  // tab-content
